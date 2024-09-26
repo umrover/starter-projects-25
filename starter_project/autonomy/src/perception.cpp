@@ -61,7 +61,7 @@ namespace mrover {
         // hint: take a look at OpenCV's documentation for the detectMarkers function
         // hint: you have mTagDictionary, mTagCorners, and mTagIds member variables already defined! (look in perception.hpp)
         // hint: write and use the "getCenterFromTagCorners" and "getClosenessMetricFromTagCorners" functions
-
+        cv::aruco::detectMarkers(image, mTagDictionary, mTagCorners, markerIds, parameters, rejectedCandidates);
         tags.clear(); // Clear old tags in output vector
 
         // TODO: implement me!
@@ -71,8 +71,7 @@ namespace mrover {
 
     auto Perception::selectTag(cv::Mat const& image, std::vector<msg::StarterProjectTag> const& tags) -> msg::StarterProjectTag { // NOLINT(*-convert-member-functions-to-static)
         // TODO: implement me!
-        (void)image;
-        (void)tags;
+        
         return msg::StarterProjectTag{};
     }
 
@@ -86,17 +85,70 @@ namespace mrover {
         // hint: think about how you can use the "image" parameter
         // hint: this is an approximation that will be used later by navigation to stop "close enough" to a tag.
         // hint: try not overthink, this metric does not have to be perfectly accurate, just correlated to distance away from a tag
-
-        // TODO: implement me!
-        (void)image;
-        (void)tagCorners;
-        return {};
+        
+        if (tagCorners.size() < 4) {
+        return cv::Size(0, 0); 
     }
 
+    
+        float minX = tagCorners[0].x, maxX = tagCorners[0].x;
+        float minY = tagCorners[0].y, maxY = tagCorners[0].y;
+
+        for (const auto& corner : tagCorners) {
+            if (corner.x < minX) minX = corner.x;
+            if (corner.x > maxX) maxX = corner.x;
+            if (corner.y < minY) minY = corner.y;
+            if (corner.y > maxY) maxY = corner.y;
+        }
+
+    
+        float centerX = (maxX + minX)/2.0f;
+        float centerY = (maxY + minY)/2.0f;
+        return std::make_tuple(centerX, centerY);
+    
+    
+    }
     auto Perception::getCenterFromTagCorners(std::vector<cv::Point2f> const& tagCorners) -> std::pair<float, float> { // NOLINT(*-convert-member-functions-to-static)
-        // TODO: implement me!
-        (void)tagCorners;
-        return {};
+        static std::pair<float, float> getCenterFromTagCorners(const std::vector<cv::Point2f>& tagCorners) {
+        if (tagCorners.size() < 4) {
+            return {0.0f, 0.0f}; // or handle the error as needed
+        }
+
+        float minX = tagCorners[0].x, maxX = tagCorners[0].x;
+        float minY = tagCorners[0].y, maxY = tagCorners[0].y;
+
+        for (const auto& corner : tagCorners) {
+            if (corner.x < minX) minX = corner.x;
+            if (corner.x > maxX) maxX = corner.x;
+            if (corner.y < minY) minY = corner.y;
+            if (corner.y > maxY) maxY = corner.y;
+        }
+
+        float centerX = (minX + maxX) / 2.0f;
+        float centerY = (minY + maxY) / 2.0f;
+
+        return {centerX, centerY};
+    }
+
+    static std::pair<float, float> findClosestTag(const std::vector<std::vector<cv::Point2f>>& tagCorners, const cv::Point2f& cameraPosition) {
+        std::pair<float, float> closestTagCenter = {0.0f, 0.0f};
+        float closestDistance = std::numeric_limits<float>::max();
+
+        for (const auto& tagCorners : tagCorners) {
+            auto tagCenter = getCenterFromTagCorners(tagCorners);
+            float distance = std::sqrt(std::pow(tagCenter.first - cameraPosition.x, 2) +
+                                       std::pow(tagCenter.second - cameraPosition.y, 2));
+
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestTagCenter = tagCenter;
+            }
+        }
+
+        return closestTagCenter; // Returns the center of the closest tag
+    }
+
+        
     }
 
 } // namespace mrover
