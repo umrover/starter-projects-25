@@ -54,6 +54,7 @@ class Navigation(Node):
 def main():
     try:
         # TODO: init a node called "navigation"
+        rclpy.create_node("navigation", None)
 
         # context and navigation objects
         context = Context()
