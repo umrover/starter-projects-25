@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/ControllerState.msg
+// generated code does not contain a copyright notice
+
+
+module mrover {
+  module msg {
+    struct ControllerState {
+      sequence<string> name;
+
+      @verbatim (language="comment", text=
+        "Armed, Disconnected, or Error")
+      sequence<string> state;
+
+      sequence<string> error;
+
+      @verbatim (language="comment", text=
+        "0,1,2,3 bits represent states")
+      sequence<uint8> limit_hit;
+    };
+  };
+};

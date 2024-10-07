@@ -12,17 +12,17 @@ list(APPEND MROVER_MESSAGE_FILE_PATHS ${STARTER_PROJ_MESSAGE_PATHS})
 
 # TODO (ali): fix include cmake build
 # Collect all cpp files in the src subdirectory to be used for perception
-# file(GLOB_RECURSE STARTER_PROJECT_PERCEPTION_SOURCES "${CMAKE_CURRENT_LIST_DIR}/src/*.cpp")
+#file(GLOB_RECURSE STARTER_PROJECT_PERCEPTION_SOURCES "${CMAKE_CURRENT_LIST_DIR}/src/*.cpp")
 # # Define a new CMake target, specifically a built C++ executable, that uses the found source files
-# add_executable(starter_project_perception ${STARTER_PROJECT_PERCEPTION_SOURCES})
+#add_executable(starter_project_perception ${STARTER_PROJECT_PERCEPTION_SOURCES})
 # # # Add custom msg type support
-# rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} rosidl_typesupport_cpp)
+#rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} rosidl_typesupport_cpp)
 # # Link needed libraries
-# target_link_libraries(starter_project_perception ${catkin_LIBRARIES} ${OpenCV_LIBS} ${cpp_typesupport_target})
+#target_link_libraries(starter_project_perception ${catkin_LIBRARIES} ${OpenCV_LIBS} ${cpp_typesupport_target})
 # # Include needed directories
-# target_include_directories(starter_project_perception PUBLIC ${catkin_INCLUDE_DIRS})
+#target_include_directories(starter_project_perception PUBLIC ${catkin_INCLUDE_DIRS})
 # #Include necessary package dependencies
-# ament_target_dependencies(starter_project_perception rclcpp std_msgs sensor_msgs)
+#ament_target_dependencies(starter_project_perception rclcpp std_msgs sensor_msgs)
 
 
 # Install our executable so that ROS knows about it

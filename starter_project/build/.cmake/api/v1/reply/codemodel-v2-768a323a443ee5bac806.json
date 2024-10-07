@@ -1,0 +1,509 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-7b86310a0310c9ac60b8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						12,
+						14,
+						15,
+						16,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						36
+					]
+				},
+				{
+					"build" : "deps/imgui",
+					"jsonFile" : "directory-deps.imgui-Debug-c971ab9a2290e36695c3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "deps/imgui",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "deps/webgpuhpp",
+					"jsonFile" : "directory-deps.webgpuhpp-Debug-4e702b54188cff8d3a89.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "deps/webgpuhpp",
+					"targetIndexes" : 
+					[
+						35
+					]
+				},
+				{
+					"build" : "deps/glfw3webgpu",
+					"jsonFile" : "directory-deps.glfw3webgpu-Debug-2de964ad67c38be1090a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "deps/glfw3webgpu",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "deps/mjbots",
+					"jsonFile" : "directory-deps.mjbots-Debug-71822625a2377eebd839.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "deps/mjbots"
+				},
+				{
+					"build" : "mrover__py",
+					"jsonFile" : "directory-mrover__py-Debug-ff857c02c025e2da3184.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "starter_project/build/mrover__py",
+					"targetIndexes" : 
+					[
+						17
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						5
+					],
+					"name" : "mrover",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						12,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						36
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "imgui",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "webgpu_hpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						35
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "glfw3webgpu",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "moteus",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_lie_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_lie_egg-Debug-86bfec0183927f8668e1.json",
+					"name" : "ament_cmake_python_build_lie_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_mrover_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_mrover_egg-Debug-9bdfbdf082ae1794c235.json",
+					"name" : "ament_cmake_python_build_mrover_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_navigation_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_navigation_egg-Debug-8d8e94f93223b811f1fa.json",
+					"name" : "ament_cmake_python_build_navigation_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_state_machine_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_state_machine_egg-Debug-0190407c8aac2dc057af.json",
+					"name" : "ament_cmake_python_build_state_machine_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_lie::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_lie-Debug-aadc5217f54294fc8e0e.json",
+					"name" : "ament_cmake_python_copy_lie",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_mrover::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_mrover-Debug-f929e496ebed804cbcc9.json",
+					"name" : "ament_cmake_python_copy_mrover",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_navigation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_navigation-Debug-eadd6d25876896cd9d74.json",
+					"name" : "ament_cmake_python_copy_navigation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_state_machine::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_state_machine-Debug-d4547c95ca995fedf0e7.json",
+					"name" : "ament_cmake_python_copy_state_machine",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_controller-Debug-91e993e2671a6c108bd2.json",
+					"name" : "arm_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "can_bridge::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-can_bridge-Debug-0e3fa69e6eba7f8e483d.json",
+					"name" : "can_bridge",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "differential_drive_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-differential_drive_controller-Debug-1840f004759551cdf58f.json",
+					"name" : "differential_drive_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glfw3webgpu::@f1e47715e1649d8ff232",
+					"jsonFile" : "target-glfw3webgpu-Debug-bdf5f0d309cbab01c1f7.json",
+					"name" : "glfw3webgpu",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gst_websocket_streamer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gst_websocket_streamer-Debug-c4c7c363db38316b277b.json",
+					"name" : "gst_websocket_streamer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "imgui::@05b0070aad91a1f6801c",
+					"jsonFile" : "target-imgui-Debug-4fb3ead190824b4f42eb.json",
+					"name" : "imgui",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lie::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lie-Debug-5d05db6e0ca88b728b7b.json",
+					"name" : "lie",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover-Debug-a32b89b2bb1e1431cbf6.json",
+					"name" : "mrover",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__cpp-Debug-3e7ef05a9a201f975fcf.json",
+					"name" : "mrover__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "mrover__py::@69666179fcbe63af40b3",
+					"jsonFile" : "target-mrover__py-Debug-abc4f99698b7f17edf07.json",
+					"name" : "mrover__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_generator_c-Debug-35bff214894f729c5245.json",
+					"name" : "mrover__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_generator_py-Debug-eebee8dff6fe9f3c5135.json",
+					"name" : "mrover__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_c-Debug-c2681ec1196f1280fa8d.json",
+					"name" : "mrover__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_c__pyext-Debug-27b0c2bc88a761be2b40.json",
+					"name" : "mrover__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_cpp-Debug-e52b95d1431d48456fc1.json",
+					"name" : "mrover__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_fastrtps_c-Debug-c36011587639e71a2de1.json",
+					"name" : "mrover__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_fastrtps_c__pyext-Debug-17978823bbf93399057d.json",
+					"name" : "mrover__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_fastrtps_cpp-Debug-d2c5566a0129a5816896.json",
+					"name" : "mrover__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_introspection_c-Debug-b432f62e5b2c5c5264f2.json",
+					"name" : "mrover__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_introspection_c__pyext-Debug-66e9013a903af1d244d7.json",
+					"name" : "mrover__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover__rosidl_typesupport_introspection_cpp-Debug-4e344bf0b7432804fe57.json",
+					"name" : "mrover__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mrover_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mrover_uninstall-Debug-037ad452569fe2074ca2.json",
+					"name" : "mrover_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simulator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simulator-Debug-2e43af246c1c761a5602.json",
+					"name" : "simulator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "starter_project_perception::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-starter_project_perception-Debug-6385c0a0efde929f0fed.json",
+					"name" : "starter_project_perception",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tag_detector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tag_detector-Debug-eccd387af672e5e4b132.json",
+					"name" : "tag_detector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-a12bc071a897e712c04d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "usb_camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-usb_camera-Debug-600886d6cef7dda10751.json",
+					"name" : "usb_camera",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "webgpu_hpp::@82f6bd766b22d691b36f",
+					"jsonFile" : "target-webgpu_hpp-Debug-1c1e8d853e6e55034732.json",
+					"name" : "webgpu_hpp",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "websocket_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-websocket_server-Debug-dc3a69ccfa293918c60c.json",
+					"name" : "websocket_server",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/yona/ros2_ws/src/mrover/starter_project/build",
+		"source" : "/home/yona/ros2_ws/src/mrover"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

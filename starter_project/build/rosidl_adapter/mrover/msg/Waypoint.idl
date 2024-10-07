@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/Waypoint.msg
+// generated code does not contain a copyright notice
+
+#include "mrover/msg/WaypointType.idl"
+
+module mrover {
+  module msg {
+    struct Waypoint {
+      uint8 tag_id;
+
+      mrover::msg::WaypointType type;
+    };
+  };
+};

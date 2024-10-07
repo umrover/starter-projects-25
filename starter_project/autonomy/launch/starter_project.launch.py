@@ -43,7 +43,7 @@ def generate_launch_description():
         # ===========
         # Navigation
         # ===========
-        navigation_node,
+        #navigation_node,
 
         # ============
         # Localization

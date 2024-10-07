@@ -1,0 +1,32 @@
+{
+  "package_name": "mrover",
+  "non_idl_tuples": [
+    "/home/yona/ros2_ws/src/mrover:msg/CAN.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/CalibrationStatus.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/Chassis.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/ControllerState.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/Course.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/GPSPointList.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/GPSWaypoint.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/HeaterData.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/IK.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/ImageTarget.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/ImageTargets.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/LED.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/NetworkBandwidth.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/PDLB.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/Position.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/RTKStatus.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/ScienceThermistors.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/Spectral.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/StateMachineStateUpdate.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/StateMachineStructure.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/StateMachineTransition.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/Throttle.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/Velocity.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/Waypoint.msg",
+    "/home/yona/ros2_ws/src/mrover:msg/WaypointType.msg",
+    "/home/yona/ros2_ws/src/mrover:starter_project/autonomy/msg/StarterProjectTag.msg",
+    "/home/yona/ros2_ws/src/mrover:srv/EnableAuton.srv"
+  ]
+}

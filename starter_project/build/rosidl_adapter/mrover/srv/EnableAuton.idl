@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mrover/srv/EnableAuton.srv
+// generated code does not contain a copyright notice
+
+#include "mrover/msg/GPSWaypoint.idl"
+
+module mrover {
+  module srv {
+    struct EnableAuton_Request {
+      boolean enable;
+
+      sequence<mrover::msg::GPSWaypoint> waypoints;
+    };
+    struct EnableAuton_Response {
+      boolean success;
+    };
+  };
+};

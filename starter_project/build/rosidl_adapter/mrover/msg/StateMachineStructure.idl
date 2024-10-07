@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/StateMachineStructure.msg
+// generated code does not contain a copyright notice
+
+#include "mrover/msg/StateMachineTransition.idl"
+
+module mrover {
+  module msg {
+    struct StateMachineStructure {
+      string machine_name;
+
+      sequence<mrover::msg::StateMachineTransition> transitions;
+    };
+  };
+};

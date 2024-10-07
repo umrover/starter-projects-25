@@ -1,0 +1,4 @@
+source;share/mrover/local_setup.bash
+source;share/mrover/local_setup.dsv
+source;share/mrover/local_setup.sh
+source;share/mrover/local_setup.zsh

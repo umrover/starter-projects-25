@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/ImageTargets.msg
+// generated code does not contain a copyright notice
+
+#include "mrover/msg/ImageTarget.idl"
+
+module mrover {
+  module msg {
+    struct ImageTargets {
+      sequence<mrover::msg::ImageTarget> targets;
+    };
+  };
+};

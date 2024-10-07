@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/StateMachineStateUpdate.msg
+// generated code does not contain a copyright notice
+
+
+module mrover {
+  module msg {
+    struct StateMachineStateUpdate {
+      string state_machine_name;
+
+      string state;
+    };
+  };
+};

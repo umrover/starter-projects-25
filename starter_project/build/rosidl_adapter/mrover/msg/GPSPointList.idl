@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/GPSPointList.msg
+// generated code does not contain a copyright notice
+
+#include "mrover/msg/GPSWaypoint.idl"
+
+module mrover {
+  module msg {
+    struct GPSPointList {
+      sequence<mrover::msg::GPSWaypoint> points;
+    };
+  };
+};

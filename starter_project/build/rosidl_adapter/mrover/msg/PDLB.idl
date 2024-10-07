@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/PDLB.msg
+// generated code does not contain a copyright notice
+
+
+module mrover {
+  module msg {
+    typedef float float__6[6];
+    struct PDLB {
+      @verbatim (language="comment", text=
+        "Celsius. 0 is for 24V buck, 1-3 are for the 12V bucks, 4 is for 5V, 5 is for 3.3V.")
+      float__6 temperatures;
+
+      @verbatim (language="comment", text=
+        "Amperes")
+      float__6 currents;
+    };
+  };
+};

@@ -144,12 +144,6 @@ def main():
         signal.signal(signal.SIGINT, signal.SIG_DFL)
         state_machine = StateMachine()
 
-<<<<<<< HEAD
-        print("Node Created...")
-
-        print("Subscriptions Created...")
-
-=======
 
         print("Node Created...")
 
@@ -157,7 +151,6 @@ def main():
         print("Subscriptions Created...")
 
 
->>>>>>> nav_fixes
         app = QApplication([])  # type: ignore
         g = GUI(state_machine)
         g.show()

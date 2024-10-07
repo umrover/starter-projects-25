@@ -1,0 +1,2843 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include",
+			"ament_index_register_resource",
+			"rosidl_generate_interfaces",
+			"ament_execute_extensions",
+			"ament_environment_hooks",
+			"_ament_cmake_export_libraries_register_environment_hook",
+			"ament_export_libraries",
+			"_ament_cmake_python_register_environment_hook",
+			"ament_python_install_package",
+			"_ament_cmake_python_install_package",
+			"mrover_add_node",
+			"ament_cmake_environment_generate_package_run_dependencies_marker",
+			"ament_package",
+			"ament_cmake_environment_generate_parent_prefix_path_marker",
+			"ament_generate_package_environment",
+			"ament_index_register_package",
+			"_ament_package"
+		],
+		"files" : 
+		[
+			"starter_project/autonomy/AutonomyStarterProject.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_resource.cmake",
+			"/opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_environment_hooks.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_cmake_export_libraries-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_libraries/cmake/ament_export_libraries.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_generator_cpp/cmake/rosidl_generator_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/cmake/rosidl_typesupport_fastrtps_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_introspection_c/cmake/rosidl_typesupport_introspection_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake/rosidl_typesupport_introspection_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_cpp/cmake/rosidl_typesupport_cpp_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_cmake_python-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake",
+			"/opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake",
+			"cmake/macros.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment/ament_cmake_environment_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_cmake_environment_hooks_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/ament_generate_package_environment.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_index_register_package.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/index/ament_cmake_index_package_hook.cmake",
+			"/opt/ros/humble/share/ament_cmake_export_targets/cmake/ament_cmake_export_targets_package_hook.cmake",
+			"/opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_package_hook.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 166,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 171,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 252,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 286,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 4,
+				"parent" : 8
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 149,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 157,
+				"parent" : 9
+			},
+			{
+				"command" : 6,
+				"file" : 8,
+				"line" : 35,
+				"parent" : 11
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 25,
+				"parent" : 12
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 70,
+				"parent" : 13
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 87,
+				"parent" : 13
+			},
+			{
+				"command" : 0,
+				"file" : 4,
+				"line" : 164,
+				"parent" : 9
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 9,
+				"parent" : 17
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 151,
+				"parent" : 18
+			},
+			{
+				"command" : 0,
+				"file" : 9,
+				"line" : 167,
+				"parent" : 18
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 10,
+				"parent" : 21
+			},
+			{
+				"command" : 0,
+				"file" : 10,
+				"line" : 137,
+				"parent" : 22
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 11,
+				"parent" : 24
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 169,
+				"parent" : 25
+			},
+			{
+				"command" : 0,
+				"file" : 11,
+				"line" : 185,
+				"parent" : 25
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 12,
+				"parent" : 28
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 141,
+				"parent" : 29
+			},
+			{
+				"command" : 0,
+				"file" : 12,
+				"line" : 146,
+				"parent" : 29
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 13,
+				"parent" : 32
+			},
+			{
+				"command" : 0,
+				"file" : 13,
+				"line" : 141,
+				"parent" : 33
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 14,
+				"parent" : 35
+			},
+			{
+				"command" : 0,
+				"file" : 14,
+				"line" : 140,
+				"parent" : 36
+			},
+			{
+				"command" : 0,
+				"file" : 14,
+				"line" : 146,
+				"parent" : 36
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 15,
+				"parent" : 39
+			},
+			{
+				"command" : 0,
+				"file" : 15,
+				"line" : 140,
+				"parent" : 40
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 7
+			},
+			{
+				"file" : 18,
+				"parent" : 42
+			},
+			{
+				"command" : 9,
+				"file" : 18,
+				"line" : 124,
+				"parent" : 43
+			},
+			{
+				"command" : 8,
+				"file" : 17,
+				"line" : 38,
+				"parent" : 44
+			},
+			{
+				"command" : 5,
+				"file" : 16,
+				"line" : 36,
+				"parent" : 45
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 70,
+				"parent" : 46
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 87,
+				"parent" : 46
+			},
+			{
+				"command" : 10,
+				"file" : 17,
+				"line" : 39,
+				"parent" : 44
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 154,
+				"parent" : 49
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 181,
+				"parent" : 49
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 191,
+				"parent" : 49
+			},
+			{
+				"command" : 0,
+				"file" : 18,
+				"line" : 282,
+				"parent" : 43
+			},
+			{
+				"command" : 0,
+				"file" : 18,
+				"line" : 282,
+				"parent" : 43
+			},
+			{
+				"command" : 0,
+				"file" : 18,
+				"line" : 282,
+				"parent" : 43
+			},
+			{
+				"command" : 0,
+				"file" : 18,
+				"line" : 302,
+				"parent" : 43
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 309,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 0,
+				"file" : 3,
+				"line" : 320,
+				"parent" : 4
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 179,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 43,
+				"parent" : 113
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 186,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 193,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 10,
+				"file" : 17,
+				"line" : 39,
+				"parent" : 117
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 154,
+				"parent" : 118
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 181,
+				"parent" : 118
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 191,
+				"parent" : 118
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 198,
+				"parent" : 0
+			},
+			{
+				"command" : 10,
+				"file" : 17,
+				"line" : 39,
+				"parent" : 122
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 154,
+				"parent" : 123
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 181,
+				"parent" : 123
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 191,
+				"parent" : 123
+			},
+			{
+				"command" : 9,
+				"file" : 1,
+				"line" : 199,
+				"parent" : 0
+			},
+			{
+				"command" : 10,
+				"file" : 17,
+				"line" : 39,
+				"parent" : 127
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 154,
+				"parent" : 128
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 181,
+				"parent" : 128
+			},
+			{
+				"command" : 0,
+				"file" : 17,
+				"line" : 191,
+				"parent" : 128
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 216,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 43,
+				"parent" : 132
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 229,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 43,
+				"parent" : 134
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 235,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 43,
+				"parent" : 136
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 239,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 43,
+				"parent" : 138
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 244,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 43,
+				"parent" : 140
+			},
+			{
+				"command" : 11,
+				"file" : 1,
+				"line" : 264,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 19,
+				"line" : 43,
+				"parent" : 142
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 272,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 289,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 290,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 291,
+				"parent" : 0
+			},
+			{
+				"command" : 13,
+				"file" : 1,
+				"line" : 294,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 21,
+				"line" : 66,
+				"parent" : 148
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 149
+			},
+			{
+				"file" : 20,
+				"parent" : 150
+			},
+			{
+				"command" : 12,
+				"file" : 20,
+				"line" : 47,
+				"parent" : 151
+			},
+			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 29,
+				"parent" : 152
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 153
+			},
+			{
+				"command" : 14,
+				"file" : 20,
+				"line" : 48,
+				"parent" : 151
+			},
+			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 43,
+				"parent" : 155
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 156
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 149
+			},
+			{
+				"file" : 22,
+				"parent" : 158
+			},
+			{
+				"command" : 5,
+				"file" : 22,
+				"line" : 20,
+				"parent" : 159
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 70,
+				"parent" : 160
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 87,
+				"parent" : 160
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 70,
+				"parent" : 160
+			},
+			{
+				"command" : 0,
+				"file" : 6,
+				"line" : 87,
+				"parent" : 160
+			},
+			{
+				"command" : 15,
+				"file" : 22,
+				"line" : 26,
+				"parent" : 159
+			},
+			{
+				"command" : 0,
+				"file" : 23,
+				"line" : 91,
+				"parent" : 165
+			},
+			{
+				"command" : 0,
+				"file" : 23,
+				"line" : 91,
+				"parent" : 165
+			},
+			{
+				"command" : 0,
+				"file" : 23,
+				"line" : 91,
+				"parent" : 165
+			},
+			{
+				"command" : 0,
+				"file" : 23,
+				"line" : 107,
+				"parent" : 165
+			},
+			{
+				"command" : 0,
+				"file" : 23,
+				"line" : 119,
+				"parent" : 165
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 149
+			},
+			{
+				"file" : 25,
+				"parent" : 171
+			},
+			{
+				"command" : 16,
+				"file" : 25,
+				"line" : 16,
+				"parent" : 172
+			},
+			{
+				"command" : 2,
+				"file" : 24,
+				"line" : 29,
+				"parent" : 173
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 174
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 149
+			},
+			{
+				"file" : 26,
+				"parent" : 176
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 0,
+				"file" : 26,
+				"line" : 28,
+				"parent" : 177
+			},
+			{
+				"command" : 1,
+				"file" : 5,
+				"line" : 48,
+				"parent" : 149
+			},
+			{
+				"file" : 27,
+				"parent" : 187
+			},
+			{
+				"command" : 2,
+				"file" : 27,
+				"line" : 18,
+				"parent" : 188
+			},
+			{
+				"command" : 0,
+				"file" : 2,
+				"line" : 105,
+				"parent" : 189
+			},
+			{
+				"command" : 17,
+				"file" : 21,
+				"line" : 68,
+				"parent" : 148
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 122,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 122,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 122,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 122,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 122,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 122,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 122,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 150,
+				"parent" : 191
+			},
+			{
+				"command" : 0,
+				"file" : 21,
+				"line" : 157,
+				"parent" : 191
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"starter_project/autonomy/src/localization.py",
+				"starter_project/autonomy/src/navigation/navigation_starter_project.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/rosidl_interfaces",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/mrover"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "include/mrover/mrover",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/rosidl_generator_c/mrover",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 14,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 15,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/library_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 16,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmrover__rosidl_generator_c.so"
+			],
+			"targetId" : "mrover__rosidl_generator_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 18,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 19,
+			"component" : "Unspecified",
+			"destination" : "include/mrover/mrover",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/rosidl_typesupport_fastrtps_c/mrover",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 20,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmrover__rosidl_typesupport_fastrtps_c.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 23,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 23,
+			"component" : "Unspecified",
+			"destination" : "include/mrover/mrover",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/rosidl_generator_cpp/mrover",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 26,
+			"component" : "Unspecified",
+			"destination" : "include/mrover/mrover",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/rosidl_typesupport_fastrtps_cpp/mrover",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 27,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmrover__rosidl_typesupport_fastrtps_cpp.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+			"targetIndex" : 25,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 30,
+			"component" : "Unspecified",
+			"destination" : "include/mrover/mrover",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/rosidl_typesupport_introspection_c/mrover",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 31,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmrover__rosidl_typesupport_introspection_c.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 26,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 34,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmrover__rosidl_typesupport_c.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+			"targetIndex" : 20,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 37,
+			"component" : "Unspecified",
+			"destination" : "include/mrover/mrover",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/rosidl_typesupport_introspection_cpp/mrover",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 38,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmrover__rosidl_typesupport_introspection_cpp.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+			"targetIndex" : 28,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 41,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"libmrover__rosidl_typesupport_cpp.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+			"targetIndex" : 22,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 47,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/pythonpath.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 48,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/pythonpath.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 50,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/mrover-2025.0.0-py3.10.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/ament_cmake_python/mrover/mrover.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 51,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/mrover",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/rosidl_generator_py/mrover",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 52,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/mrover",
+			"paths" : 
+			[
+				"rosidl_generator_py/mrover/mrover_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+			"targetIndex" : 24,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 53,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "mrover__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+				"index" : 24
+			},
+			"destination" : "lib/python3.10/site-packages/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 54,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/mrover",
+			"paths" : 
+			[
+				"rosidl_generator_py/mrover/mrover_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+			"targetIndex" : 27,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 54,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "mrover__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+				"index" : 27
+			},
+			"destination" : "lib/python3.10/site-packages/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 55,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/mrover",
+			"paths" : 
+			[
+				"rosidl_generator_py/mrover/mrover_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so"
+			],
+			"targetId" : "mrover__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+			"targetIndex" : 21,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 55,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "mrover__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+				"index" : 21
+			},
+			"destination" : "lib/python3.10/site-packages/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 56,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"rosidl_generator_py/mrover/libmrover__rosidl_generator_py.so"
+			],
+			"targetId" : "mrover__rosidl_generator_py::@6890427a1f51a3e7e1df",
+			"targetIndex" : 19,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 57,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/CAN.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 58,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/CalibrationStatus.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 59,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/Chassis.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 60,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/ControllerState.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 61,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/Course.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 62,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/GPSPointList.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 63,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/GPSWaypoint.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 64,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/HeaterData.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 65,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/IK.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 66,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/ImageTarget.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 67,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/ImageTargets.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 68,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/LED.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 69,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/NetworkBandwidth.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 70,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/PDLB.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 71,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/Position.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 72,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/RTKStatus.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 73,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/ScienceThermistors.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 74,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/Spectral.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 75,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/StateMachineStateUpdate.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 76,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/StateMachineStructure.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 77,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/StateMachineTransition.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 78,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/Throttle.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 79,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/Velocity.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 80,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/Waypoint.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 81,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/WaypointType.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 82,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/msg/StarterProjectTag.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 83,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/srv",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_adapter/mrover/srv/EnableAuton.idl"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 84,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/CAN.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 85,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/CalibrationStatus.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 86,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/Chassis.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 87,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/ControllerState.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 88,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/Course.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 89,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/GPSPointList.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 90,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/GPSWaypoint.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 91,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/HeaterData.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 92,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/IK.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 93,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/ImageTarget.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 94,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/ImageTargets.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 95,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/LED.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 96,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/NetworkBandwidth.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 97,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/PDLB.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 98,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/Position.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 99,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/RTKStatus.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 100,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/ScienceThermistors.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 101,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/Spectral.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 102,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/StateMachineStateUpdate.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 103,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/StateMachineStructure.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 104,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/StateMachineTransition.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 105,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/Throttle.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 106,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/Velocity.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 107,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/Waypoint.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 108,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"msg/WaypointType.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 109,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/msg",
+			"paths" : 
+			[
+				"starter_project/autonomy/msg/StarterProjectTag.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 110,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/srv",
+			"paths" : 
+			[
+				"srv/EnableAuton.srv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 111,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/srv",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_cmake/srv/EnableAuton_Request.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 112,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/srv",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_cmake/srv/EnableAuton_Response.msg"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 114,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"starter_project_perception"
+			],
+			"targetId" : "starter_project_perception::@6890427a1f51a3e7e1df",
+			"targetIndex" : 31,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 114,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "starter_project_perception::@6890427a1f51a3e7e1df",
+				"index" : 31
+			},
+			"destination" : "lib/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 115,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"starter_project/autonomy/src/localization.py",
+				"starter_project/autonomy/src/navigation/navigation_starter_project.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 116,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"starter_project/autonomy/launch"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 119,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/navigation-2025.0.0-py3.10.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/ament_cmake_python/navigation/navigation.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 120,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/navigation",
+			"paths" : 
+			[
+				{
+					"from" : "navigation",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 121,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 124,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/lie-2025.0.0-py3.10.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/ament_cmake_python/lie/lie.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 125,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/lie",
+			"paths" : 
+			[
+				{
+					"from" : "lie",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 126,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 129,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/state_machine-2025.0.0-py3.10.egg-info",
+			"paths" : 
+			[
+				{
+					"from" : "starter_project/build/ament_cmake_python/state_machine/state_machine.egg-info",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 130,
+			"component" : "Unspecified",
+			"destination" : "lib/python3.10/site-packages/state_machine",
+			"paths" : 
+			[
+				{
+					"from" : "state_machine",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 131,
+			"component" : "Unspecified",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 133,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"simulator"
+			],
+			"targetId" : "simulator::@6890427a1f51a3e7e1df",
+			"targetIndex" : 30,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 133,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "simulator::@6890427a1f51a3e7e1df",
+				"index" : 30
+			},
+			"destination" : "lib/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 135,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"tag_detector"
+			],
+			"targetId" : "tag_detector::@6890427a1f51a3e7e1df",
+			"targetIndex" : 32,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 135,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "tag_detector::@6890427a1f51a3e7e1df",
+				"index" : 32
+			},
+			"destination" : "lib/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 137,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"differential_drive_controller"
+			],
+			"targetId" : "differential_drive_controller::@6890427a1f51a3e7e1df",
+			"targetIndex" : 10,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 137,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "differential_drive_controller::@6890427a1f51a3e7e1df",
+				"index" : 10
+			},
+			"destination" : "lib/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 139,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"arm_controller"
+			],
+			"targetId" : "arm_controller::@6890427a1f51a3e7e1df",
+			"targetIndex" : 8,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 139,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "arm_controller::@6890427a1f51a3e7e1df",
+				"index" : 8
+			},
+			"destination" : "lib/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 141,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"usb_camera"
+			],
+			"targetId" : "usb_camera::@6890427a1f51a3e7e1df",
+			"targetIndex" : 34,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 141,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "usb_camera::@6890427a1f51a3e7e1df",
+				"index" : 34
+			},
+			"destination" : "lib/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 143,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"can_bridge"
+			],
+			"targetId" : "can_bridge::@6890427a1f51a3e7e1df",
+			"targetIndex" : 9,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 143,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "can_bridge::@6890427a1f51a3e7e1df",
+				"index" : 9
+			},
+			"destination" : "lib/mrover",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 144,
+			"component" : "Unspecified",
+			"destination" : "lib/mrover",
+			"paths" : 
+			[
+				"navigation/nav.py",
+				"navigation/stuck_detector/stuck_detector.py",
+				"localization/rover_gps_driver.py",
+				"localization/gps_linearization.py",
+				"localization/basestation_gps_driver.py",
+				"superstructure/superstructure.py",
+				"scripts/debug_course_publisher.py",
+				"scripts/visualizer.py",
+				"starter_project/autonomy/src/localization.py",
+				"starter_project/autonomy/src/navigation/navigation_starter_project.py"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 145,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"launch"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 146,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"urdf"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 147,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"config"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 154,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/package_run_dependencies",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mrover"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 157,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/parent_prefix_path",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mrover"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 161,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 162,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/ament_prefix_path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 163,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 164,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/environment",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/path.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 166,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/local_setup.bash"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 167,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/local_setup.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 168,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/local_setup.zsh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 169,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/local_setup.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 170,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_environment_hooks/package.dsv"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 175,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/packages",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_index/share/ament_index/resource_index/packages/mrover"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 178,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "export_mrover__rosidl_generator_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"index" : 18
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/export_mrover__rosidl_generator_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 179,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "export_mrover__rosidl_typesupport_fastrtps_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"index" : 23
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/export_mrover__rosidl_typesupport_fastrtps_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 180,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "export_mrover__rosidl_generator_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_generator_cpp::@6890427a1f51a3e7e1df",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/export_mrover__rosidl_generator_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 181,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "export_mrover__rosidl_typesupport_fastrtps_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"index" : 25
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/export_mrover__rosidl_typesupport_fastrtps_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 182,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "mrover__rosidl_typesupport_introspection_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"index" : 26
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/mrover__rosidl_typesupport_introspection_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 183,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "mrover__rosidl_typesupport_c",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"index" : 20
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/mrover__rosidl_typesupport_cExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 184,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "mrover__rosidl_typesupport_introspection_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"index" : 28
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/mrover__rosidl_typesupport_introspection_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 185,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "mrover__rosidl_typesupport_cpp",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"index" : 22
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/mrover__rosidl_typesupport_cppExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 186,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"exportName" : "export_mrover__rosidl_generator_py",
+			"exportTargets" : 
+			[
+				{
+					"id" : "mrover__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"index" : 19
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/1e7f030222887bf1f651684ed0dfbaf9/export_mrover__rosidl_generator_pyExport.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 190,
+			"component" : "Unspecified",
+			"destination" : "share/ament_index/resource_index/rclcpp_components",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/mrover"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 192,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_cmake/rosidl_cmake-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 193,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 194,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 195,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 196,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 197,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 198,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 199,
+			"component" : "Unspecified",
+			"destination" : "share/mrover/cmake",
+			"paths" : 
+			[
+				"starter_project/build/ament_cmake_core/mroverConfig.cmake",
+				"starter_project/build/ament_cmake_core/mroverConfig-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 200,
+			"component" : "Unspecified",
+			"destination" : "share/mrover",
+			"paths" : 
+			[
+				"package.xml"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

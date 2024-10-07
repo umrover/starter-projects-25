@@ -1,0 +1,4 @@
+source;share/mrover/environment/ament_prefix_path.sh
+source;share/mrover/environment/library_path.sh
+source;share/mrover/environment/path.sh
+source;share/mrover/environment/pythonpath.sh

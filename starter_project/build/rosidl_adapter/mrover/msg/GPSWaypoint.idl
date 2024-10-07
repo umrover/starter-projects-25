@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from mrover/msg/GPSWaypoint.msg
+// generated code does not contain a copyright notice
+
+#include "mrover/msg/WaypointType.idl"
+
+module mrover {
+  module msg {
+    struct GPSWaypoint {
+      int8 tag_id;
+
+      double latitude_degrees;
+
+      double longitude_degrees;
+
+      mrover::msg::WaypointType type;
+    };
+  };
+};
