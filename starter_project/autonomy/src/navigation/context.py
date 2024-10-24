@@ -5,6 +5,7 @@ from typing import Optional
 
 import numpy as np
 import rclpy
+import rclpy.time
 from rclpy.node import Node
 import tf2_ros
 from geometry_msgs.msg import Twist
@@ -24,14 +25,22 @@ class Rover:
 
     def get_pose(self) -> Optional[SE3]:
         # TODO: return the pose of the rover (or None if we don't have one (catch exception))
+        self.pose = SE3.from_tf_tree(self.ctx.tf_buffer, "map", "rover_base_link")
+        # how catch exception?
+        if(self.pose == None):
+            raise FileNotFoundError('No pose from tf tree')
+        else:
+            return self.pose
         pass
 
     def send_drive_command(self, twist: Twist):
         # TODO: send the Twist message to the rover
+        self.ctx.vel_cmd_publisher.publish(twist)
         pass
 
     def send_drive_stop(self):
         # TODO: tell the rover to stop
+        self.send_drive_command(Twist())
         pass
 
 
@@ -47,6 +56,7 @@ class Environment:
 
     def receive_fid_data(self, message: StarterProjectTag):
         # TODO: handle incoming FID data messages here
+        self.fid_pos = message
         pass
 
     def get_fid_data(self) -> Optional[StarterProjectTag]:
@@ -55,6 +65,10 @@ class Environment:
         if it exists, otherwise returns None
         """
         # TODO: return either None or your position message
+        if(self.fid_pos == None):
+            return None
+        else:
+            return self.fid_pos
         pass
 
 
