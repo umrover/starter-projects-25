@@ -35,12 +35,12 @@ namespace mrover {
      */
     class Perception : public rclcpp::Node {
     private:
-        rclcpp::Subscription<sensor_msgs::msg::Image>::ConstSharedPtr mImageSubscriber;
+        rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr mImageSubscriber;
         cv::Ptr<cv::aruco::Dictionary> mTagDictionary;
         std::vector<std::vector<cv::Point2f>> mTagCorners;
         std::vector<int> mTagIds;
-        std::vector<msg::StarterProjectTag> mTags;
         rclcpp::Publisher<msg::StarterProjectTag>::SharedPtr mTagPublisher;
+        cv::Mat mCurrentImage;
 
     public:
         Perception();

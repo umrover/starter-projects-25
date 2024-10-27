@@ -1,4 +1,4 @@
-# starter_project.launch.py
+#starter_project.launch.py
 
 import os
 
@@ -38,11 +38,11 @@ def generate_launch_description():
             # ==========
             # Perception
             # ==========
-            perception_node,
+            #perception_node,
             # ===========
             # Navigation
             # ===========
-            navigation_node,
+            #navigation_node,
             # ============
             # Localization
             # ============

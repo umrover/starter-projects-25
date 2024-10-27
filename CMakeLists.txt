@@ -176,9 +176,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 # Starter project 
 # TODO (ali): delete once AutonomyStarterProject.cmake is fixed
-mrover_add_node(starter_project_perception ${CMAKE_CURRENT_LIST_DIR}/starter_project/autonomy/src/*.cpp)
-target_link_libraries(starter_project_perception ${OpenCV_LIBS})
-ament_target_dependencies(starter_project_perception rclcpp std_msgs sensor_msgs)
+#mrover_add_node(starter_project_perception ${CMAKE_CURRENT_LIST_DIR}/starter_project/autonomy/src/*.cpp)
+#target_link_libraries(starter_project_perception ${OpenCV_LIBS})
+#ament_target_dependencies(starter_project_perception rclcpp std_msgs sensor_msgs)
 
 
 # Install our executable so that ROS knows about it

@@ -1,154 +1,124 @@
 #include "perception.hpp"
-
-// ROS Headers, ros namespace
 #include <cmath>
-#include <functional>
-#include <iterator>
 #include <limits>
-#include <memory>
-#include <numeric>
-#include <opencv2/aruco.hpp>
-#include <opencv2/core.hpp>
-#include <opencv2/core/mat.hpp>
-#include <opencv2/core/types.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 
 auto main(int argc, char** argv) -> int {
     rclcpp::init(argc, argv);
-
-    // "spin" blocks until our node dies
     rclcpp::spin(std::make_shared<mrover::Perception>());
     rclcpp::shutdown();
-
     return EXIT_SUCCESS;
 }
 
 namespace mrover {
 
     Perception::Perception() : Node("perception") {
-        // Subscribe to camera image messages
-        // Every time another node publishes to this topic we will be notified
-        // Specifically the callback we passed will be invoked
-        mImageSubscriber = create_subscription<sensor_msgs::msg::Image>("zed/left/image", 1, [this](sensor_msgs::msg::Image::ConstSharedPtr const& msg) {
-            imageCallback(msg);
-        });
-
-        // Create a publisher for our tag topic
-        // See: http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28c%2B%2B%29
-        // TODO: uncomment me!
-        // mTagPublisher = create_publisher<msg::StarterProjectTag>("tag", 1);
-
+        mImageSubscriber = create_subscription<sensor_msgs::msg::Image>(
+            "zed/left/image", 1, 
+            [this](sensor_msgs::msg::Image::ConstSharedPtr const& msg) {
+                imageCallback(msg);
+            });
+        mTagPublisher = create_publisher<msg::StarterProjectTag>("tag", 1);
         mTagDictionary = cv::makePtr<cv::aruco::Dictionary>(cv::aruco::getPredefinedDictionary(cv::aruco::DICT_4X4_50));
     }
 
-    auto Perception::imageCallback(sensor_msgs::msg::Image::ConstSharedPtr const& imageMessage) -> void {
-        // Create a cv::Mat from the ROS image message
-        // Note this does not copy the image data, it is basically a pointer
-        // Be careful if you extend its lifetime beyond this function
-        cv::Mat imageBGRA{static_cast<int>(imageMessage->height), static_cast<int>(imageMessage->width),
-                      CV_8UC4, const_cast<uint8_t*>(imageMessage->data.data())};
-        cv::Mat image;
+    void Perception::imageCallback(sensor_msgs::msg::Image::ConstSharedPtr const& imageMessage) {
+        std::cout << "Received image, processing for tags..." << std::endl;
 
-        cv::cvtColor(imageBGRA, image, cv::COLOR_BGRA2BGR);
-
-        // TODO: implement me!
-        // hint: think about the order in which these functions were implemented ;)
-        (void)this;
-    }
-
-    auto Perception::findTagsInImage(cv::Mat const& image, std::vector<msg::StarterProjectTag>& tags) -> void { // NOLINT(*-convert-member-functions-to-static)
-        // hint: take a look at OpenCV's documentation for the detectMarkers function
-        // hint: you have mTagDictionary, mTagCorners, and mTagIds member variables already defined! (look in perception.hpp)
-        // hint: write and use the "getCenterFromTagCorners" and "getClosenessMetricFromTagCorners" functions
-        cv::aruco::detectMarkers(image, mTagDictionary, mTagCorners, markerIds, parameters, rejectedCandidates);
-        tags.clear(); // Clear old tags in output vector
-
-        // TODO: implement me!
-        (void)image;
-
-    }
-
-    auto Perception::selectTag(cv::Mat const& image, std::vector<msg::StarterProjectTag> const& tags) -> msg::StarterProjectTag { // NOLINT(*-convert-member-functions-to-static)
-        // TODO: implement me!
+        mCurrentImage = cv::Mat{static_cast<int>(imageMessage->height), static_cast<int>(imageMessage->width),
+                                 CV_8UC4, const_cast<uint8_t*>(imageMessage->data.data())};
+        cv::Mat imageBGR;
+        cv::cvtColor(mCurrentImage, imageBGR, cv::COLOR_BGRA2BGR);
         
-        return msg::StarterProjectTag{};
+        std::vector<msg::StarterProjectTag> tags;
+        findTagsInImage(imageBGR, tags);
+
+        std::cout << "Found " << tags.size() << " tags." << std::endl;
+
+        if (!tags.empty()) {
+            auto closestTag = selectTag(imageBGR, tags);
+            publishTag(closestTag);
+        } else {
+            std::cout << "No tags found in image." << std::endl;
+        }
     }
 
-    auto Perception::publishTag(msg::StarterProjectTag const& tag) -> void {
-        // TODO: implement me!
-        (void)tag;
+    void Perception::findTagsInImage(cv::Mat const& image, std::vector<msg::StarterProjectTag>& tags) {
+        std::vector<int> markerIds;
+        cv::aruco::detectMarkers(image, mTagDictionary, mTagCorners, markerIds);
 
+        std::cout << "Detected " << markerIds.size() << " markers." << std::endl;
+
+        tags.clear();
+        for (size_t i = 0; i < markerIds.size(); ++i) {
+            msg::StarterProjectTag tag;
+            tag.id = markerIds[i];
+            tag.corners = mTagCorners[i]; // Assuming you have this field in msg::StarterProjectTag
+            tags.push_back(tag);
+        }
     }
 
-    auto Perception::getClosenessMetricFromTagCorners(cv::Mat const& image, std::vector<cv::Point2f> const& tagCorners) -> float { // NOLINT(*-convert-member-functions-to-static)
-        // hint: think about how you can use the "image" parameter
-        // hint: this is an approximation that will be used later by navigation to stop "close enough" to a tag.
-        // hint: try not overthink, this metric does not have to be perfectly accurate, just correlated to distance away from a tag
-        
-        if (tagCorners.size() < 4) {
-        return cv::Size(0, 0); 
-    }
-
-    
-        float minX = tagCorners[0].x, maxX = tagCorners[0].x;
-        float minY = tagCorners[0].y, maxY = tagCorners[0].y;
-
-        for (const auto& corner : tagCorners) {
-            if (corner.x < minX) minX = corner.x;
-            if (corner.x > maxX) maxX = corner.x;
-            if (corner.y < minY) minY = corner.y;
-            if (corner.y > maxY) maxY = corner.y;
+    msg::StarterProjectTag Perception::selectTag(cv::Mat const& image, std::vector<msg::StarterProjectTag> const& tags) {
+        if (tags.empty()) {
+            throw std::invalid_argument("No tags provided.");
         }
 
-    
-        float centerX = (maxX + minX)/2.0f;
-        float centerY = (maxY + minY)/2.0f;
-        return std::make_tuple(centerX, centerY);
-    
-    
-    }
-    auto Perception::getCenterFromTagCorners(std::vector<cv::Point2f> const& tagCorners) -> std::pair<float, float> { // NOLINT(*-convert-member-functions-to-static)
-        static std::pair<float, float> getCenterFromTagCorners(const std::vector<cv::Point2f>& tagCorners) {
-        if (tagCorners.size() < 4) {
-            return {0.0f, 0.0f}; // or handle the error as needed
-        }
-
-        float minX = tagCorners[0].x, maxX = tagCorners[0].x;
-        float minY = tagCorners[0].y, maxY = tagCorners[0].y;
-
-        for (const auto& corner : tagCorners) {
-            if (corner.x < minX) minX = corner.x;
-            if (corner.x > maxX) maxX = corner.x;
-            if (corner.y < minY) minY = corner.y;
-            if (corner.y > maxY) maxY = corner.y;
-        }
-
-        float centerX = (minX + maxX) / 2.0f;
-        float centerY = (minY + maxY) / 2.0f;
-
-        return {centerX, centerY};
-    }
-
-    static std::pair<float, float> findClosestTag(const std::vector<std::vector<cv::Point2f>>& tagCorners, const cv::Point2f& cameraPosition) {
-        std::pair<float, float> closestTagCenter = {0.0f, 0.0f};
+        cv::Point2f imageCenter(image.cols / 2.0f, image.rows / 2.0f);
+        msg::StarterProjectTag closestTag;
         float closestDistance = std::numeric_limits<float>::max();
 
-        for (const auto& tagCorners : tagCorners) {
-            auto tagCenter = getCenterFromTagCorners(tagCorners);
-            float distance = std::sqrt(std::pow(tagCenter.first - cameraPosition.x, 2) +
-                                       std::pow(tagCenter.second - cameraPosition.y, 2));
+        for (const auto& tag : tags) {
+            auto tagCenter = getCenterFromTagCorners(tag.corners);
+            float distance = cv::norm(imageCenter - cv::Point2f(tagCenter.first, tagCenter.second));
 
             if (distance < closestDistance) {
                 closestDistance = distance;
-                closestTagCenter = tagCenter;
+                closestTag = tag;
             }
         }
 
-        return closestTagCenter; // Returns the center of the closest tag
+        return closestTag;
     }
 
-        
+    void Perception::publishTag(msg::StarterProjectTag const& tag) {
+        auto message = std::make_shared<msg::StarterProjectTag>(tag);
+        mTagPublisher->publish(tag);
+        std::cout << "Published tag ID: " << tag.id << std::endl;
     }
 
+    float Perception::getClosenessMetricFromTagCorners(cv::Mat const& image, std::vector<cv::Point2f> const& tagCorners) {
+        if (tagCorners.size() != 4) {
+            throw std::invalid_argument("tagCorners must contain exactly 4 points.");
+        }
+
+        cv::Point2f center(0, 0);
+        for (const auto& corner : tagCorners) {
+            center += corner;
+        }
+        center *= 0.25f;
+
+        cv::Point2f expectedCenter(image.cols / 2.0f, image.rows / 2.0f);
+        float distance = cv::norm(center - expectedCenter);
+        float maxDistance = std::sqrt((image.cols * image.cols) + (image.rows * image.rows)) / 2.0f;
+        return 1.0f - std::clamp(distance / maxDistance, 0.0f, 1.0f);
+    }
+
+    std::pair<float, float> Perception::getCenterFromTagCorners(std::vector<cv::Point2f> const& tagCorners) {
+        float minX = tagCorners[0].x, maxX = tagCorners[0].x;
+        float minY = tagCorners[0].y, maxY = tagCorners[0].y;
+
+        for (const auto& corner : tagCorners) {
+            if (corner.x < minX) minX = corner.x;
+            if (corner.x > maxX) maxX = corner.x;
+            if (corner.y < minY) minY = corner.y;
+            if (corner.y > maxY) maxY = corner.y;
+        }
+
+        float x_tag_center_pixel = (minX + maxX) / 2.0f;
+        float y_tag_center_pixel = (minY + maxY) / 2.0f;
+
+        return {x_tag_center_pixel, y_tag_center_pixel};
+    }
+    
 } // namespace mrover
