@@ -84,6 +84,7 @@ namespace mrover {
          * @return              2-tuple (x,y) approximate center in pixel space
          */
         [[nodiscard]] auto getCenterFromTagCorners(std::vector<cv::Point2f> const& tagCorners) -> std::pair<float, float>;
+        //get the average of every x and every y?? dont just pick two arbitrary points
 
         /**
          *  Select the tag closest to the center of the camera

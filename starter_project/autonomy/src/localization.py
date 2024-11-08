@@ -22,7 +22,8 @@ class Localization(Node):
     def __init__(self):
         super().__init__("localization")
         # create subscribers for GPS and IMU data, linking them to our callback functions
-        # TODO
+        self.create_subscription(Imu, "imu/data_raw", self.imu_callback, 1)
+        self.create_subscription(NavSatFix, "gps/fix", self.gps_callback, 1)
 
         # create a transform broadcaster for publishing to the TF tree
         self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
@@ -37,7 +38,11 @@ class Localization(Node):
         convert it to cartesian coordinates, store that value in `self.pose`, then publish
         that pose to the TF tree.
         """
-        # TODO
+        ref = np.array([(38.4225202), (-110.7844653)])
+        point = np.array([(msg.latitude), (msg.longitude)])
+        cartesian = self.spherical_to_cartesian(point, ref)
+        self.pose = SE3.from_pos_quat(cartesian, self.pose.rotation.quaternion)
+        self.pose.public_to_tf_tree(self.tf_broadcaster, "map", "rover_base_link", self.get_clock().now())
 
     def imu_callback(self, msg: Imu):
         """
@@ -45,7 +50,12 @@ class Localization(Node):
         on the /imu topic. It should read the orientation data from the given Imu message,
         store that value in `self.pose`, then publish that pose to the TF tree.
         """
-        # TODO
+        self.pose = SE3.from_pos_quat(
+            self.pose.position, np.array([msg.orientation.x, msg.orientation.y, msg.orientation.z, msg.orientation.w])
+        )
+        print("publishing imu")
+        self.pose.publish_to_tf_tree(self.tf_broadcaster, "map", "rover_base_link", self.get_clock().now())
+
 
     @staticmethod
     def spherical_to_cartesian(spherical_coord: np.ndarray, reference_coord: np.ndarray) -> np.ndarray:
@@ -59,7 +69,15 @@ class Localization(Node):
                                 given as a numpy array [latitude, longitude]
         :returns: the approximated cartesian coordinates in meters, given as a numpy array [x, y, z]
         """
-        # TODO
+        r = 6371000
+        x = (
+            r
+            * (np.radians(spherical_coord[1]) - np.radians(reference_coord[1]))
+            * np.cos(np.radians(reference_coord[0]))
+        )
+        y = r * (np.radians(spherical_coord[0]) - np.radians(reference_coord[0]))
+        z = 0
+        return np.array([x, y, z])
 
 def main():
     # initialize the node
